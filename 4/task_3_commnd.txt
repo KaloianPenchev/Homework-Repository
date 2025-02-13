@@ -1,0 +1,3 @@
+gcc -c transformation.c -o transformation.o
+gcc 3.c transformation.o -o 3_output.exe
+3_output.exe

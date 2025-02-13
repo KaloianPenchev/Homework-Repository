@@ -1,0 +1,4 @@
+gcc -c maths.c -o maths.o
+ar rcs libmaths.a maths.o
+gcc 5.c -L/Users/PC/Desktop/dev/homework4 -lmaths -o 5_output.exe
+5_output.exe

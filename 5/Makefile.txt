@@ -1,0 +1,19 @@
+all: help.exe strlenght.exe strconcat.exe strcompare.exe
+
+help.exe:
+	gcc help.c -o help.exe
+
+mystrings.o:
+	gcc -c mystrings.c -o mystrings.o
+
+strlenght.exe: mystrings.o
+	gcc strlenght.c mystrings.o -o strlenght.exe
+
+strconcat.exe: mystrings.o
+	gcc strconcat.c mystrings.o -o strconcat.exe
+
+strcompare.exe: mystrings.o
+	gcc strcompare.c mystrings.o -o strcompare.exe
+
+clean:
+	del /q *.o *.exe
