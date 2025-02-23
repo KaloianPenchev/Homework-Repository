@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int comparesc(const void * const ptr1, const void * const ptr2){
+int comparasc(const void * const ptr1, const void * const ptr2){
     const int * const utilptr1 = ptr1;
     const int * const utilptr2 = ptr2;
 
@@ -41,7 +41,7 @@ int main(){
     const void * const ptr1 = &a;
     const void * const ptr2 = &b;
 
-    printf("Comparison №1: %d\n", comparesc(ptr1, ptr2));
+    printf("Comparison №1: %d\n", comparasc(ptr1, ptr2));
     printf("Comparison №2: %d", comparedecs(ptr1, ptr2));
 
     return 0;
