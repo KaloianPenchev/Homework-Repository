@@ -30,7 +30,7 @@ int comparedecs(const void * const ptr1, const void * const ptr2){
 
 int main(){
 
-    const int a, b;
+    int a, b;
 
     printf("Enter value for the first const variable: ");
     scanf("%d", &a);

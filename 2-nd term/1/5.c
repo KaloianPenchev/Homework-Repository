@@ -7,11 +7,9 @@ void bubblesort(int arr[], int arr_sz,
 
     for(int i = 0; i < arr_sz - 1; i++){
         for(int j = 0; j < arr_sz - i - 1; j++){
-            //printf("%d %d\n", arr[i], arr[j]);
             if(compare(&arr[j], &arr[j + 1])){
                 swapelements(&arr[j], &arr[j + 1]);
             }
-            //printf("%d %d\n", arr[i], arr[j]);
         }
     }
 

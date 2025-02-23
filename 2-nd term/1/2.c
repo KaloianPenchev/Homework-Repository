@@ -1,18 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <string.h>
 
-int main(){
-
+int main() {
     char string[20];
 
     fgets(string, sizeof(string), stdin);
 
-    char * ptr = strchr(string, '\n');
-
-    * ptr = '\0';
-
-    for(size_t i = 0; i < sizeof(string); i++){
-        printf("%c", string[i]);
-    }
     
+    char *ptr = strchr(string, '\n');
+    if (ptr != NULL) {
+        *ptr = '\0';
+    }
+
+    
+    printf("%s\n", string);
+
     return 0;
 }

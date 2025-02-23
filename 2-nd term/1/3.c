@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void swap_variables_through_pointers(void * ptr1, void * ptr2){
+void swap(void * ptr1, void * ptr2){
     
     int * utilptr1 = ptr1;
     int * utilptr2 = ptr2;
@@ -22,7 +22,7 @@ int main(){
     void * ptr1 = &a;
     void * ptr2 = &b;
 
-    swap_variables_through_pointers(ptr1, ptr2);
+    swap(ptr1, ptr2);
 
     printf("Value for the first variable: %d\n", a);
     printf("Value for the second variable: %d", b);

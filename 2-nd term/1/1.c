@@ -15,8 +15,8 @@ int main(){
     printf("Address of the first pointer: %p\n", &ptr1);
     printf("Address of the second pointer: %p\n", &ptr2);
 
-    printf("Value of the first variable trought the pointer: %lf\n", * ptr1);
-    printf("Value of the second variable trought the pointer: %lf\n", * ptr2);
+    printf("Value of the first variable trough the pointer: %lf\n", * ptr1);
+    printf("Value of the second variable trough the pointer: %lf\n", * ptr2);
 
     return 0;
 }
