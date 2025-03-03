@@ -16,7 +16,7 @@ int main(){
 
     int lenght = str_len(ptr);
 
-    printf("Lenght: %d", lenght);
+    printf("Lenght : %d", lenght);
 
     return 0;
 }
