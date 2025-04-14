@@ -40,12 +40,13 @@ int main() {
         int lenght = strlen(subject);
         subject[lenght - 1] = '\0'; 
 
-        subjects[i] = malloc((strlen(subject) + 1) * sizeof(char));
+        subjects[i] = malloc(lenght * sizeof(char));
         check_memory(subjects[i]);
         strcpy(subjects[i], subject);
     }
 
     int option, flag = 1, students_count = 0;
+    
     char **students = NULL;
     int **diary = NULL;
 
@@ -68,7 +69,10 @@ int main() {
 
                 printf("Enter the name of the student: ");
                 fgets(student, SIZE, stdin);
-                student[strcspn(student, "\n")] = '\0';
+
+                int ln = strlen(student);
+
+                student[ln - 1] = '\0';
 
                 int idx = students_count - 1;
 
@@ -119,7 +123,7 @@ int main() {
                 break;
 
             default:
-                printf("Invalid option! Please choose between 1-3.\n");
+                printf("Invalid option!\n");
                 break;
         }
     } while (flag);

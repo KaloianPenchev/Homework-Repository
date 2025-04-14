@@ -87,7 +87,7 @@ int main() {
                 break;
 
             default:
-                printf("Invalid option! Please choose between 1-4.\n");
+                printf("Invalid option!\n");
                 break;
         }
 
