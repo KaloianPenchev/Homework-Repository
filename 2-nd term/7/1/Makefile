@@ -1,0 +1,10 @@
+all: main2.exe
+
+main2.exe: main2.c DynamicArray.o
+	gcc main2.c DynamicArray.o -o main2.exe
+
+DynamicArray.o: DynamicArray.c DynamicArray.h util.h
+	gcc -c DynamicArray.c -o DynamicArray.o
+
+clean:
+	del /q *.o *.exe
