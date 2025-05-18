@@ -6,11 +6,6 @@ typedef enum{
     true
 } Bool;
 
-ul find_index_of_id(DynamicArray * array, ul id){
-    ul index = find(&(*array), id);
-    return index;
-}
-
 void print_array(DynamicArray * array){
     for(int i = 0; i < array->size; i++){
         printf("# %d : %lu\n", i + 1, array->buffer[i]);
@@ -54,7 +49,7 @@ int main(){
             ul id_to_be_deleted;
             printf("Enter id: ");
             scanf("%lu", &id_to_be_deleted);
-            ul idx = find_index_of_id(&dynArr, id_to_be_deleted);
+            ul idx = find(&dynArr, id_to_be_deleted);
 
             if(idx == -1){
                 printf("No donator found with ID of %lu!\n", id_to_be_deleted);

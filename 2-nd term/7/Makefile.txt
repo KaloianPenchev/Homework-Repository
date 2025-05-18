@@ -1,4 +1,7 @@
-all: main2.exe
+all: main1.exe main2.exe
+
+main1.exe: main1.c DynamicArray.o
+	gcc main1.c DynamicArray.o -o main1.exe
 
 main2.exe: main2.c DynamicArray.o
 	gcc main2.c DynamicArray.o -o main2.exe

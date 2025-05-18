@@ -50,13 +50,16 @@ int main(void) {
   printDynArr(&dynArr);
 
   ul idx1 = find(&dynArr, 105);
-  printf("%d\n", idx1);
+  printf("Index of element with value %d: %d\n", 105, idx1);
 
   ul idx2 = find(&dynArr, 100);
-  printf("%d\n", idx2);
+  printf("Index of element with value %d: %d\n", 100, idx2);
 
   ul idx3 = find(&dynArr, 77);
-  printf("%d\n", idx3);
+  printf("Index of element with value %d: %d\n", 77, idx3);
+
+  ul idx4 = find(&dynArr, 99);
+  printf("Index of element with value %d: %d\n", 99, idx4);
 
   release(&dynArr);
   printf("Assert release size == 0: %d\n", dynArr.size == 0);
