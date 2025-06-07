@@ -77,7 +77,7 @@ int main(){
             new_task[strcspn(new_task, "\n")] = 0;
             
             uint priority;
-            printf("Enter the task priority (lower number = higher priority): ");
+            printf("Enter the task priority: ");
             scanf("%d", &priority);
 
             ListType task;
