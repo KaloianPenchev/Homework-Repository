@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "linkedlist.h"
-#include "../util/util.h"
+#include "../error/error.h"
 
 LinkedList init(){
     LinkedList new_list = {
